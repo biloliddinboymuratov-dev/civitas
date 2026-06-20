@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civitas Global Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-admin">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo">CG</span>
+          <div>
+            <p class="brand-label">Civitas Global</p>
+            <p class="brand-tag">Admin Panel</p>
+          </div>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Back to Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Secure editing</p>
+            <h2>Admin Panel</h2>
+            <p>Use this page to update news, articles, and the homepage message locally.</p>
+          </div>
+
+          <div class="admin-grid">
+            <div class="admin-card">
+              <h3>Update homepage hero</h3>
+              <form id="admin-home-form">
+                <label>
+                  Headline
+                  <input type="text" id="home-heading" placeholder="Civitas Global" required />
+                </label>
+                <label>
+                  Subheading
+                  <textarea id="home-subtitle" rows="3" placeholder="Trusted coverage, research collaboration, and policy insight." required></textarea>
+                </label>
+                <button type="submit" class="btn primary">Save homepage text</button>
+              </form>
+            </div>
+
+            <div class="admin-card">
+              <h3>Add a news item</h3>
+              <form id="admin-news-form">
+                <label>
+                  Title
+                  <input type="text" id="news-title" placeholder="News title" required />
+                </label>
+                <label>
+                  Summary
+                  <textarea id="news-summary" rows="3" placeholder="News summary" required></textarea>
+                </label>
+                <label>
+                  Date
+                  <input type="text" id="news-date" placeholder="June 2026" required />
+                </label>
+                <button type="submit" class="btn primary">Add news item</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="admin-grid">
+            <div class="admin-card">
+              <h3>Add a blog article</h3>
+              <form id="admin-blog-form">
+                <label>
+                  Title
+                  <input type="text" id="blog-title" placeholder="Article title" required />
+                </label>
+                <label>
+                  Category
+                  <input type="text" id="blog-category" placeholder="Editorial, Research, Insight" required />
+                </label>
+                <label>
+                  Summary
+                  <textarea id="blog-summary" rows="3" placeholder="Article summary" required></textarea>
+                </label>
+                <button type="submit" class="btn primary">Add blog article</button>
+              </form>
+            </div>
+
+            <div class="admin-card">
+              <h3>Manage saved content</h3>
+              <p>Saved items are stored in your browser and will appear on the homepage if available.</p>
+              <button id="clear-storage" class="btn outline">Clear saved site data</button>
+              <p id="admin-status" class="admin-status">No changes yet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Admin panel for Civitas Global.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
